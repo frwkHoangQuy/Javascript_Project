@@ -1,3 +1,9 @@
-function solution(str){
-  return str.split('').reverse().join('');
+let arrayDiff = (a,b) => { 
+  var result = [];
+  for (let i = 0; i< a.length; ++i){
+    if (!b.includes(a[i])){
+      result.push(a[i]);
+    }
+  }
+  return result;
 }
